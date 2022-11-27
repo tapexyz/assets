@@ -6,7 +6,7 @@
 <br>
 Static assets repository for Lenstube Project.
 
-[Lensube Repository](https://github.com/lenstube-xyz/lenstube)
+[Lenstube Repository](https://github.com/lenstube-xyz/lenstube)
 
 ## Images
 
