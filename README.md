@@ -21,5 +21,3 @@ Static assets repository for Lenstube Project.
 /sitemaps/channels/100000.txt
 /sitemaps/channels/150000.txt
 ```
-
-Consumed from [Lenster](https://github.com/lensterxyz/sitemap/tree/main/sitemaps/profiles)'s sitemap
