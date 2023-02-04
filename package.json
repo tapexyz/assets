@@ -1,8 +1,8 @@
 {
-  "name": "sitemap",
+  "name": "assets",
   "description": "",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "dependencies": {
     "axios": "^1.2.6",
     "axios-retry": "^3.4.0",
