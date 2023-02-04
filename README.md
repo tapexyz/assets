@@ -12,6 +12,7 @@ Static assets repository for Lenstube Project.
 
 ```
 /images/*
+/fonts/*
 ```
 
 ## Sitemaps
