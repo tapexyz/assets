@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://assets.lenstube.xyz/images/brand/lenstube.svg" height="70" alt="Logo">
+    <img src="https://static.lenstube.xyz/images/brand/lenstube.svg" height="70" alt="Logo">
     <h1>Lenstube</h1>
     <a href="https://lenstube.xyz">https://lenstube.xyz</a>
 </div>
