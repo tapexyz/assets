@@ -24,7 +24,9 @@
           "id": "lens",
           "name": "Lens",
           "keywords": ["lens", "social"],
-          "skins": [{ "src": "./custom/lens.png" }]
+          "skins": [
+            { "src": "https://static.lenstube.xyz/data/emoji/custom/lens.png" }
+          ]
         },
         {
           "id": "lenstube",
