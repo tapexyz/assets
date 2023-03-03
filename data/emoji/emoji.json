@@ -8,7 +8,11 @@
           "id": "shipit",
           "name": "Squirrel",
           "keywords": ["github", "code", "review", "ship"],
-          "skins": [{ "src": "./custom/shipit.png" }]
+          "skins": [
+            {
+              "src": "https://static.lenstube.xyz/data/emoji/custom/shipit.png"
+            }
+          ]
         }
       ]
     },
@@ -26,7 +30,11 @@
           "id": "lenstube",
           "name": "Lenstube",
           "keywords": ["video", "lens", "tube", "play"],
-          "skins": [{ "src": "./custom/lenstube.png" }]
+          "skins": [
+            {
+              "src": "https://static.lenstube.xyz/data/emoji/custom/lenstube.png"
+            }
+          ]
         }
       ]
     },
@@ -38,7 +46,11 @@
           "id": "party_parrot",
           "name": "Party Parrot",
           "keywords": ["dance", "dancing"],
-          "skins": [{ "src": "./custom/party_parrot.gif" }]
+          "skins": [
+            {
+              "src": "https://static.lenstube.xyz/data/emoji/custom/party_parrot.gif"
+            }
+          ]
         }
       ]
     }
