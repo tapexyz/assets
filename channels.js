@@ -11,7 +11,7 @@ const PROFILE = `
   }
 `;
 
-const end = 150000;
+const end = 200000;
 
 axiosRetry(axios, {
     retries: 200,
@@ -51,7 +51,7 @@ async function fetchUsers(startId) {
             `${i} (${ethers.utils.hexlify(i)}) => https://lenstube.xyz/channel/${handle}`
         );
         fs.appendFileSync(
-            "sitemaps/channels/150000.txt",
+            "sitemaps/channels/200000.txt",
             `https://lenstube.xyz/channel/${handle}\n`
         );
     }
