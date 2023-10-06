@@ -17,7 +17,7 @@ let sitemapXml = xmlHeader + urlsetHeader;
 profiles.map((handle, index) => {
     if (index < maxItems) {
         sitemapXml += `${index === 0 ? "" : "\n"}\t<url>
-        <loc>https://lenstube.xyz/channel/${handle.replace('.lens', '')}</loc>
+        <loc>https://tape.xyz/channel/${handle.replace('.lens', '')}</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
       </url>`;
