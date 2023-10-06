@@ -1,10 +1,10 @@
 <div align="center">
-    <img src="https://static.lenstube.xyz/images/brand/lenstube.svg" height="70" alt="Logo">
+    <img src="https://static.lenstube.xyz/brand/logo.svg" height="70" alt="Logo">
     <h1>TAPE</h1>
     <a href="https://tape.xyz">https://tape.xyz</a>
 </div>
 <br>
-Static assets repository for Lenstube Project.
+Static assets repository for TAPE Project.
 
 [TAPE Github](https://github.com/tapexyz/tape)
 
