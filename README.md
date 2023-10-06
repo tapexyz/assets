@@ -17,7 +17,7 @@ Static assets repository for TAPE Project.
 ## Sitemaps
 
 ```
-/sitemaps/channels/50000.txt
-/sitemaps/channels/100000.txt
-/sitemaps/channels/150000.txt
+/sitemaps/channels/1.xml
+/sitemaps/channels/2.xml
+/sitemaps/channels/3.xml
 ```
