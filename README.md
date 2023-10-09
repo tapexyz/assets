@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://static.lenstube.xyz/brand/logo.svg" height="70" alt="Logo">
+    <img src="https://static.tape.xyz/brand/logo.svg" height="70" alt="Logo">
     <div>
         <a href="https://tape.xyz">tape.xyz</a>
     </div>
