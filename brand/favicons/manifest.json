@@ -1,10 +1,16 @@
 {
+  "id": "xyz.tape",
   "name": "Tape",
   "short_name": "Tape",
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
   "icons": [
     {
       "src": "https://static.tape.xyz/brand/android-chrome-192x192",
-      "sizes": "192x192",
+      "sizes": "128x128",
       "type": "image/png"
     },
     {
@@ -12,8 +18,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "display": "standalone"
+  ]
 }
