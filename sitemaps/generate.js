@@ -2,7 +2,6 @@ const fs = require('fs');
 const { XMLBuilder } = require('fast-xml-parser');
 
 const GOOGLE_API_KEY = "";
-// process.env.GOOGLE_API_KEY 
 const PROFILES_SHEET_IDS = [
   "1v2P34QbnCvvJpRDJMCPE358bu-SoBIHnpvxXucQIeMc",
   "1-kHsl_9SsIbzS2FE8cQ8LrkbN2b1hSRgshGeSnsmAEI",
@@ -39,7 +38,7 @@ const buildProfileSitemap = async () => {
     }));
 
     const xml = buildSitemapXml(entries);
-    fs.writeFileSync(`profiles/${id}.xml`, xml);
+    fs.writeFileSync(`profiles/${PROFILES_SHEET_IDS.indexOf(id) + 1}.xml`, xml);
   }
 }
 
