@@ -1,29 +1,46 @@
-const fs = require("fs");
+const fs = require('fs');
+const { XMLBuilder } = require('fast-xml-parser');
 
-const fileName = "3";
-const maxItems = 50000
-const profiles = fs
-    .readFileSync(`profiles.csv`, "utf-8")
-    .split("\n")
-    .filter(Boolean);
+const GOOGLE_API_KEY = "";
+// process.env.GOOGLE_API_KEY 
+const PROFILES_SHEET_IDS = [
+  "1v2P34QbnCvvJpRDJMCPE358bu-SoBIHnpvxXucQIeMc",
+  "1-kHsl_9SsIbzS2FE8cQ8LrkbN2b1hSRgshGeSnsmAEI",
+  "1agkqmZBwy7FPyAeVWm5tx5rXis62PdDvPrd9kMwBm2k"
+]
 
-const xmlHeader = '<?xml version="1.0" encoding="UTF-8"?>\n';
-const urlsetHeader =
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-const urlsetFooter = "\n</urlset>\n";
+const buildSitemapXml = (url) => {
+  const builder = new XMLBuilder({
+    suppressEmptyNode: true,
+    ignoreAttributes: false,
+    processEntities: true,
+    format: true
+  });
 
-let sitemapXml = xmlHeader + urlsetHeader;
+  return builder.build({
+    '?xml': { '@_version': '1.0', '@_encoding': 'UTF-8' },
+    urlset: { '@_xmlns': 'http://www.sitemaps.org/schemas/sitemap/0.9', url }
+  });
+};
 
-profiles.map((handle, index) => {
-    if (index < maxItems) {
-        sitemapXml += `${index === 0 ? "" : "\n"}\t<url>
-        <loc>https://tape.xyz/channel/${handle.replace('.lens', '')}</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-      </url>`;
-    }
-});
+const buildProfileSitemap = async () => {
+  for (const id of PROFILES_SHEET_IDS) {
+    const range = 'A1:B50000';
+    const sheetsResponse = await fetch(
+      `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${range}?key=${GOOGLE_API_KEY}`
+    );
 
-sitemapXml += urlsetFooter;
+    const json = await sheetsResponse.json();
+    const profiles = json.values.map((row) => row[1]);
+    const entries = profiles.map((handle) => ({
+      loc: `https://tape.xyz/u/${handle}`,
+      changefreq: 'daily',
+      priority: '1.0'
+    }));
 
-fs.writeFileSync(`profiles/${fileName}.xml`, sitemapXml, "utf-8");
+    const xml = buildSitemapXml(entries);
+    fs.writeFileSync(`profiles/${id}.xml`, xml);
+  }
+}
+
+buildProfileSitemap();
