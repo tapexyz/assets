@@ -26,4 +26,4 @@ profiles.map((handle, index) => {
 
 sitemapXml += urlsetFooter;
 
-fs.writeFileSync(`channels/${fileName}.xml`, sitemapXml, "utf-8");
+fs.writeFileSync(`profiles/${fileName}.xml`, sitemapXml, "utf-8");
