@@ -20,8 +20,19 @@ Static assets repository for TAPE Project.
 
 ## Sitemaps
 
+API Key required - console.cloud.google.com/apis/credentials
+```
+cd sitemaps
+node generate.js
+```
+
+
 ```
 /sitemaps/profiles/1.xml
 /sitemaps/profiles/2.xml
 /sitemaps/profiles/3.xml
+```
+```
+/sitemaps/videos/1.xml
+/sitemaps/videos/2.xml
 ```

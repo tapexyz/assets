@@ -5,11 +5,11 @@ const GOOGLE_API_KEY = "";
 const PROFILES_SHEET_IDS = [
   "1v2P34QbnCvvJpRDJMCPE358bu-SoBIHnpvxXucQIeMc",
   "1-kHsl_9SsIbzS2FE8cQ8LrkbN2b1hSRgshGeSnsmAEI",
-  "1agkqmZBwy7FPyAeVWm5tx5rXis62PdDvPrd9kMwBm2k"
+  "1xf8-muHQYwxwdmRFTBq-elqSKwblyLf2SjNFzgFgL-Q"
 ]
 const VIDEOS_SHEET_IDS = [
-  "1HXyhkmD12QKaFwQ3lWydo3ixsdwHaMKqaCgV-u4qKNQ",
-  "1wy43eXdbsH3-sJHg8LdQuBi3ExnUgp1l3ARIjPW1aVw"
+  "17MH51OYMReXOZ2pwnAqm26oJikO3n4sptZ8s7xHEeWk",
+  "1HyFPMr8Om8cMPSR36uCwNU-20dWpodU330p25il77P8"
 ]
 
 const buildSitemapXml = (url) => {
